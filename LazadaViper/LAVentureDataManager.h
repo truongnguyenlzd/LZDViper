@@ -9,8 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "LAVenture.h"
 
+typedef void (^VentureListCompletionBlock)(NSArray *ventureList, NSError *error);
+
 @interface LAVentureDataManager : NSObject
 
+- (void)getVentureListWithCompletionBlock:(VentureListCompletionBlock)completionBlock;
 - (void)storeDataForVenture:(LAVenture*)venture;
 
 @end

@@ -10,8 +10,9 @@
 
 @implementation LAVentureWireFrame
 
-- (void)showWelcomeScreen {
-    [self.ventureViewController.navigationController pushViewController:self.welcomeViewController animated:YES];
+- (void)presentViewWithVenture:(LAVenture *)venture {
+    // prsent welcome view controller
+    //[self.ventureViewController.navigationController pushViewController:self.welcomeViewController animated:YES];
 }
 
 

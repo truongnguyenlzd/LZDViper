@@ -11,46 +11,86 @@
 #import "LAVenturePresenter.h"
 #import "LADependencyManager.h"
 
-@interface LAVentureViewController ()<UIPickerViewDataSource, UIPickerViewDelegate>
+@interface LAVentureViewController () <UIPickerViewDataSource, UIPickerViewDelegate>
+
+@property NSArray *ventureList;
+@property (weak, nonatomic) IBOutlet UIButton *goHomeButton;
+@property (weak, nonatomic) IBOutlet UIPickerView *venturePicker;
 
 @end
 
 @implementation LAVentureViewController
 
-- (IBAction)goHomeAction:(id)sender {
-    LAVenture *ventureSelected = [self getSelectedVenture];
-    [self.eventHandler chooseVenture:ventureSelected];
-}
-
--(LAVenture*)getSelectedVenture {
-    LAVenture *ventureSelected = [[LAVenture alloc] init];
-    NSInteger selectedRow = [self.venturePicker selectedRowInComponent:0];
-    NSString *ventureString = [self.ventureList objectAtIndex:selectedRow];
-    ventureSelected.ventureName = ventureString;
-    ventureSelected.idVenture = @"12";//Just for demo
-    return ventureSelected;
-}
-
-- (void)configVentureModule {
-    [self injectDependency];
-}
-
-//WARNING: Glue code for creating wireframe. Can be removed when using conjunction with TYPHOON.
-//Or we can create DI container by ourself like this demo.
-//If a screen has multiple flow to another screen, this will be weird.
-- (void)injectDependency {
-    [[LADependencyManager sharedInstance] injectDependencyForVentureModule:self];
+-(void)awakeFromNib {
+    [self injectDependencies];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self initDataForVenturePicker];
-    [self configVenturePicker];
-    [self configVentureModule];
+    [self.eventHandler setupView];
 }
 
-- (void)initDataForVenturePicker {
-    self.ventureList = @[@"Vietnam", @"Thailan", @"Malaysia"];
+
+#pragma mark - LAVentureViewInputProtocol
+
+- (void)showLoadingActivity {
+    NSLog(@"show loader");
+}
+
+- (void)hideLoadingActivity {
+    NSLog(@"hide loader");
+}
+
+- (void)disableHomeButton {
+    self.goHomeButton.enabled = NO;
+}
+
+- (void)enableHomeButton {
+    self.goHomeButton.enabled = YES;
+}
+
+- (void)updateVenturesWithList:(NSArray *)venturesList {
+    [self configVenturePicker];
+    self.ventureList = venturesList;
+}
+
+- (void)showErrorWithMessage:(NSString *)messageString {
+    NSLog(@"error: empty ventures list");
+}
+
+
+#pragma mark - IBActions
+
+- (IBAction)goHomeAction:(id)sender {
+    NSInteger selectedRow = [self.venturePicker selectedRowInComponent:0];
+    [self.eventHandler didSelectVenture:self.ventureList[selectedRow]];
+    
+}
+
+
+#pragma mark - UIPicker
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    return self.ventureList.count;
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    LAVenture *venture = self.ventureList[row];
+    return venture.ventureName;
+}
+
+
+#pragma mark - helper methods
+
+////WARNING: Glue code for creating wireframe. Can be removed when using conjunction with TYPHOON.
+////Or we can create DI container by ourself like this demo.
+////If a screen has multiple flow to another screen, this will be weird.
+- (void)injectDependencies {
+    [[LADependencyManager sharedInstance] injectDependencyForVentureModule:self];
 }
 
 - (void)configVenturePicker {
@@ -60,17 +100,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-}
-
-#pragma mark - UIPicker
-- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
-    return 1;
-}
-- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    return self.ventureList.count;
-}
-- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-    return self.ventureList[row];
 }
 
 @end

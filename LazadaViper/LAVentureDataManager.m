@@ -7,8 +7,18 @@
 //
 
 #import "LAVentureDataManager.h"
+#import "LAVenture.h"
 
 @implementation LAVentureDataManager
+
+- (void)getVentureListWithCompletionBlock:(VentureListCompletionBlock)completionBlock {
+    // fetching data from CoreData :)
+    LAVenture *vietnam = [[LAVenture alloc] initWithId:1 andName:@"Vietnam"];
+    LAVenture *thailand = [[LAVenture alloc] initWithId:2 andName:@"Thailand"];
+    LAVenture *malaysia = [[LAVenture alloc] initWithId:3 andName:@"Malaysia"];
+    
+    completionBlock(@[vietnam, thailand, malaysia], nil);
+}
 
 - (void)storeDataForVenture:(LAVenture*)venture {
     //Can be store the information of venture into NSUserDefault or CoreData.

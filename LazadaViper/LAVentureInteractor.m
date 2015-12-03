@@ -10,6 +10,17 @@
 
 @implementation LAVentureInteractor
 
+- (void)loadVentureList {
+    // load data from serverManager, dataManager, etc.
+    // call ventureListDidLoad after it's ready
+
+    __weak typeof(self) _wself = self;
+    [self.ventureDataManager getVentureListWithCompletionBlock:^(NSArray *ventureList, NSError *error) {
+        [_wself.output didLoadVentureList:ventureList];
+    }];
+    
+}
+
 - (void)configApplicationFromVenture:(LAVenture*)venture {
     [self.ventureDataManager storeDataForVenture:venture];
 }
