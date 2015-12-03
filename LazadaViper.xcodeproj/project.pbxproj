@@ -1,0 +1,747 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9112130F1C07659F00437690 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9112130E1C07659F00437690 /* main.m */; };
+		911213121C07659F00437690 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 911213111C07659F00437690 /* AppDelegate.m */; };
+		911213151C07659F00437690 /* LAVentureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911213141C07659F00437690 /* LAVentureViewController.m */; };
+		911213181C07659F00437690 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 911213161C07659F00437690 /* Main.storyboard */; };
+		9112131B1C07659F00437690 /* LazadaViper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 911213191C07659F00437690 /* LazadaViper.xcdatamodeld */; };
+		9112131D1C07659F00437690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9112131C1C07659F00437690 /* Assets.xcassets */; };
+		911213201C07659F00437690 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9112131E1C07659F00437690 /* LaunchScreen.storyboard */; };
+		9112132B1C07659F00437690 /* LazadaViperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9112132A1C07659F00437690 /* LazadaViperTests.m */; };
+		911213361C07659F00437690 /* LazadaViperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 911213351C07659F00437690 /* LazadaViperUITests.m */; };
+		911213481C07679100437690 /* LACartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 911213471C07679100437690 /* LACartViewController.m */; };
+		9112134B1C07679C00437690 /* LAHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9112134A1C07679C00437690 /* LAHomeViewController.m */; };
+		9112134E1C0767A700437690 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9112134D1C0767A700437690 /* SearchViewController.m */; };
+		911213591C076C0F00437690 /* LAVenturePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 911213581C076C0F00437690 /* LAVenturePresenter.m */; };
+		9112135E1C076D3300437690 /* LAVenture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9112135D1C076D3300437690 /* LAVenture.m */; };
+		91829BDE1C0840FE003676EA /* LADependencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 91829BDD1C0840FE003676EA /* LADependencyManager.m */; };
+		91A10C1E1C0771C80070912F /* LAVentureWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A10C1D1C0771C80070912F /* LAVentureWireFrame.m */; };
+		91A10C251C07759F0070912F /* LAWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A10C241C07759F0070912F /* LAWelcomeViewController.m */; };
+		91A10C2D1C08387D0070912F /* LAVentureInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A10C2C1C08387D0070912F /* LAVentureInteractor.m */; };
+		91A10C311C08394F0070912F /* LAVentureDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A10C301C08394F0070912F /* LAVentureDataManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		911213271C07659F00437690 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 911213021C07659F00437690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 911213091C07659F00437690;
+			remoteInfo = LazadaViper;
+		};
+		911213321C07659F00437690 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 911213021C07659F00437690 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 911213091C07659F00437690;
+			remoteInfo = LazadaViper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9112130A1C07659F00437690 /* LazadaViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazadaViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9112130E1C07659F00437690 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		911213101C07659F00437690 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		911213111C07659F00437690 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		911213131C07659F00437690 /* LAVentureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAVentureViewController.h; sourceTree = "<group>"; };
+		911213141C07659F00437690 /* LAVentureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LAVentureViewController.m; sourceTree = "<group>"; };
+		911213171C07659F00437690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9112131A1C07659F00437690 /* LazadaViper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LazadaViper.xcdatamodel; sourceTree = "<group>"; };
+		9112131C1C07659F00437690 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9112131F1C07659F00437690 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		911213211C07659F00437690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		911213261C07659F00437690 /* LazadaViperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LazadaViperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9112132A1C07659F00437690 /* LazadaViperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LazadaViperTests.m; sourceTree = "<group>"; };
+		9112132C1C07659F00437690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		911213311C07659F00437690 /* LazadaViperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LazadaViperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		911213351C07659F00437690 /* LazadaViperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LazadaViperUITests.m; sourceTree = "<group>"; };
+		911213371C07659F00437690 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		911213461C07679100437690 /* LACartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LACartViewController.h; sourceTree = "<group>"; };
+		911213471C07679100437690 /* LACartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LACartViewController.m; sourceTree = "<group>"; };
+		911213491C07679C00437690 /* LAHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAHomeViewController.h; sourceTree = "<group>"; };
+		9112134A1C07679C00437690 /* LAHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAHomeViewController.m; sourceTree = "<group>"; };
+		9112134C1C0767A700437690 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		9112134D1C0767A700437690 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		911213571C076C0F00437690 /* LAVenturePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAVenturePresenter.h; sourceTree = "<group>"; };
+		911213581C076C0F00437690 /* LAVenturePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAVenturePresenter.m; sourceTree = "<group>"; };
+		9112135B1C076C4A00437690 /* LAVentureProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAVentureProtocol.h; sourceTree = "<group>"; };
+		9112135C1C076D3300437690 /* LAVenture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAVenture.h; sourceTree = "<group>"; };
+		9112135D1C076D3300437690 /* LAVenture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAVenture.m; sourceTree = "<group>"; };
+		91829BDC1C0840FE003676EA /* LADependencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LADependencyManager.h; sourceTree = "<group>"; };
+		91829BDD1C0840FE003676EA /* LADependencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LADependencyManager.m; sourceTree = "<group>"; };
+		91A10C1C1C0771C80070912F /* LAVentureWireFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAVentureWireFrame.h; sourceTree = "<group>"; };
+		91A10C1D1C0771C80070912F /* LAVentureWireFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAVentureWireFrame.m; sourceTree = "<group>"; };
+		91A10C231C07759F0070912F /* LAWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAWelcomeViewController.h; sourceTree = "<group>"; };
+		91A10C241C07759F0070912F /* LAWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAWelcomeViewController.m; sourceTree = "<group>"; };
+		91A10C2B1C08387D0070912F /* LAVentureInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAVentureInteractor.h; sourceTree = "<group>"; };
+		91A10C2C1C08387D0070912F /* LAVentureInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAVentureInteractor.m; sourceTree = "<group>"; };
+		91A10C2F1C08394F0070912F /* LAVentureDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAVentureDataManager.h; sourceTree = "<group>"; };
+		91A10C301C08394F0070912F /* LAVentureDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAVentureDataManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		911213071C07659F00437690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		911213231C07659F00437690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9112132E1C07659F00437690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		911213011C07659F00437690 = {
+			isa = PBXGroup;
+			children = (
+				9112130C1C07659F00437690 /* LazadaViper */,
+				911213291C07659F00437690 /* LazadaViperTests */,
+				911213341C07659F00437690 /* LazadaViperUITests */,
+				9112130B1C07659F00437690 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9112130B1C07659F00437690 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9112130A1C07659F00437690 /* LazadaViper.app */,
+				911213261C07659F00437690 /* LazadaViperTests.xctest */,
+				911213311C07659F00437690 /* LazadaViperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9112130C1C07659F00437690 /* LazadaViper */ = {
+			isa = PBXGroup;
+			children = (
+				91829BDB1C0840BD003676EA /* DependencyManager */,
+				91A10C2E1C0839360070912F /* DataManager */,
+				91A10C261C0781C80070912F /* Controllers */,
+				911213101C07659F00437690 /* AppDelegate.h */,
+				911213111C07659F00437690 /* AppDelegate.m */,
+				9112131C1C07659F00437690 /* Assets.xcassets */,
+				911213531C076AD700437690 /* Entity */,
+				911213211C07659F00437690 /* Info.plist */,
+				911213521C076ACF00437690 /* Interactor */,
+				9112131E1C07659F00437690 /* LaunchScreen.storyboard */,
+				911213191C07659F00437690 /* LazadaViper.xcdatamodeld */,
+				911213161C07659F00437690 /* Main.storyboard */,
+				911213541C076AED00437690 /* Module */,
+				9112130D1C07659F00437690 /* Supporting Files */,
+			);
+			path = LazadaViper;
+			sourceTree = "<group>";
+		};
+		9112130D1C07659F00437690 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9112130E1C07659F00437690 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		911213291C07659F00437690 /* LazadaViperTests */ = {
+			isa = PBXGroup;
+			children = (
+				9112132A1C07659F00437690 /* LazadaViperTests.m */,
+				9112132C1C07659F00437690 /* Info.plist */,
+			);
+			path = LazadaViperTests;
+			sourceTree = "<group>";
+		};
+		911213341C07659F00437690 /* LazadaViperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				911213351C07659F00437690 /* LazadaViperUITests.m */,
+				911213371C07659F00437690 /* Info.plist */,
+			);
+			path = LazadaViperUITests;
+			sourceTree = "<group>";
+		};
+		911213431C07667000437690 /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9112134C1C0767A700437690 /* SearchViewController.h */,
+				9112134D1C0767A700437690 /* SearchViewController.m */,
+			);
+			name = SearchViewController;
+			sourceTree = "<group>";
+		};
+		911213441C07667A00437690 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				911213491C07679C00437690 /* LAHomeViewController.h */,
+				9112134A1C07679C00437690 /* LAHomeViewController.m */,
+			);
+			name = HomeViewController;
+			sourceTree = "<group>";
+		};
+		911213451C07669000437690 /* CartViewController */ = {
+			isa = PBXGroup;
+			children = (
+				911213461C07679100437690 /* LACartViewController.h */,
+				911213471C07679100437690 /* LACartViewController.m */,
+			);
+			name = CartViewController;
+			sourceTree = "<group>";
+		};
+		911213501C076A3700437690 /* ChooseVentureModule */ = {
+			isa = PBXGroup;
+			children = (
+				9112135A1C076C3300437690 /* Protocol */,
+				911213561C076B2600437690 /* Wireframe */,
+				911213551C076B1B00437690 /* Presenter */,
+			);
+			name = ChooseVentureModule;
+			sourceTree = "<group>";
+		};
+		911213521C076ACF00437690 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				91A10C2B1C08387D0070912F /* LAVentureInteractor.h */,
+				91A10C2C1C08387D0070912F /* LAVentureInteractor.m */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		911213531C076AD700437690 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9112135C1C076D3300437690 /* LAVenture.h */,
+				9112135D1C076D3300437690 /* LAVenture.m */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		911213541C076AED00437690 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				91A10C2A1C0782210070912F /* SearchModule */,
+				91A10C291C0782160070912F /* CheckoutModule */,
+				91A10C281C0782090070912F /* LoginModule */,
+				911213501C076A3700437690 /* ChooseVentureModule */,
+			);
+			name = Module;
+			sourceTree = "<group>";
+		};
+		911213551C076B1B00437690 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				911213571C076C0F00437690 /* LAVenturePresenter.h */,
+				911213581C076C0F00437690 /* LAVenturePresenter.m */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		911213561C076B2600437690 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				91A10C1C1C0771C80070912F /* LAVentureWireFrame.h */,
+				91A10C1D1C0771C80070912F /* LAVentureWireFrame.m */,
+			);
+			name = Wireframe;
+			sourceTree = "<group>";
+		};
+		9112135A1C076C3300437690 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9112135B1C076C4A00437690 /* LAVentureProtocol.h */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		91829BDB1C0840BD003676EA /* DependencyManager */ = {
+			isa = PBXGroup;
+			children = (
+				91829BDC1C0840FE003676EA /* LADependencyManager.h */,
+				91829BDD1C0840FE003676EA /* LADependencyManager.m */,
+			);
+			name = DependencyManager;
+			sourceTree = "<group>";
+		};
+		91A10C1F1C0773380070912F /* WelcomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				91A10C231C07759F0070912F /* LAWelcomeViewController.h */,
+				91A10C241C07759F0070912F /* LAWelcomeViewController.m */,
+			);
+			name = WelcomeViewController;
+			sourceTree = "<group>";
+		};
+		91A10C261C0781C80070912F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				91A10C271C0781E20070912F /* VentureController */,
+				91A10C1F1C0773380070912F /* WelcomeViewController */,
+				911213451C07669000437690 /* CartViewController */,
+				911213441C07667A00437690 /* HomeViewController */,
+				911213431C07667000437690 /* SearchViewController */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		91A10C271C0781E20070912F /* VentureController */ = {
+			isa = PBXGroup;
+			children = (
+				911213131C07659F00437690 /* LAVentureViewController.h */,
+				911213141C07659F00437690 /* LAVentureViewController.m */,
+			);
+			name = VentureController;
+			sourceTree = "<group>";
+		};
+		91A10C281C0782090070912F /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = LoginModule;
+			sourceTree = "<group>";
+		};
+		91A10C291C0782160070912F /* CheckoutModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CheckoutModule;
+			sourceTree = "<group>";
+		};
+		91A10C2A1C0782210070912F /* SearchModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = SearchModule;
+			sourceTree = "<group>";
+		};
+		91A10C2E1C0839360070912F /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				91A10C2F1C08394F0070912F /* LAVentureDataManager.h */,
+				91A10C301C08394F0070912F /* LAVentureDataManager.m */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		911213091C07659F00437690 /* LazadaViper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9112133A1C07659F00437690 /* Build configuration list for PBXNativeTarget "LazadaViper" */;
+			buildPhases = (
+				911213061C07659F00437690 /* Sources */,
+				911213071C07659F00437690 /* Frameworks */,
+				911213081C07659F00437690 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LazadaViper;
+			productName = LazadaViper;
+			productReference = 9112130A1C07659F00437690 /* LazadaViper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		911213251C07659F00437690 /* LazadaViperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9112133D1C07659F00437690 /* Build configuration list for PBXNativeTarget "LazadaViperTests" */;
+			buildPhases = (
+				911213221C07659F00437690 /* Sources */,
+				911213231C07659F00437690 /* Frameworks */,
+				911213241C07659F00437690 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				911213281C07659F00437690 /* PBXTargetDependency */,
+			);
+			name = LazadaViperTests;
+			productName = LazadaViperTests;
+			productReference = 911213261C07659F00437690 /* LazadaViperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		911213301C07659F00437690 /* LazadaViperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 911213401C07659F00437690 /* Build configuration list for PBXNativeTarget "LazadaViperUITests" */;
+			buildPhases = (
+				9112132D1C07659F00437690 /* Sources */,
+				9112132E1C07659F00437690 /* Frameworks */,
+				9112132F1C07659F00437690 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				911213331C07659F00437690 /* PBXTargetDependency */,
+			);
+			name = LazadaViperUITests;
+			productName = LazadaViperUITests;
+			productReference = 911213311C07659F00437690 /* LazadaViperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		911213021C07659F00437690 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = LAZHCM10431;
+				TargetAttributes = {
+					911213091C07659F00437690 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					911213251C07659F00437690 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 911213091C07659F00437690;
+					};
+					911213301C07659F00437690 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 911213091C07659F00437690;
+					};
+				};
+			};
+			buildConfigurationList = 911213051C07659F00437690 /* Build configuration list for PBXProject "LazadaViper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 911213011C07659F00437690;
+			productRefGroup = 9112130B1C07659F00437690 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				911213091C07659F00437690 /* LazadaViper */,
+				911213251C07659F00437690 /* LazadaViperTests */,
+				911213301C07659F00437690 /* LazadaViperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		911213081C07659F00437690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911213201C07659F00437690 /* LaunchScreen.storyboard in Resources */,
+				9112131D1C07659F00437690 /* Assets.xcassets in Resources */,
+				911213181C07659F00437690 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		911213241C07659F00437690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9112132F1C07659F00437690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		911213061C07659F00437690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9112134B1C07679C00437690 /* LAHomeViewController.m in Sources */,
+				911213151C07659F00437690 /* LAVentureViewController.m in Sources */,
+				911213121C07659F00437690 /* AppDelegate.m in Sources */,
+				9112130F1C07659F00437690 /* main.m in Sources */,
+				91A10C1E1C0771C80070912F /* LAVentureWireFrame.m in Sources */,
+				9112135E1C076D3300437690 /* LAVenture.m in Sources */,
+				911213481C07679100437690 /* LACartViewController.m in Sources */,
+				9112131B1C07659F00437690 /* LazadaViper.xcdatamodeld in Sources */,
+				91A10C311C08394F0070912F /* LAVentureDataManager.m in Sources */,
+				911213591C076C0F00437690 /* LAVenturePresenter.m in Sources */,
+				91A10C2D1C08387D0070912F /* LAVentureInteractor.m in Sources */,
+				91829BDE1C0840FE003676EA /* LADependencyManager.m in Sources */,
+				91A10C251C07759F0070912F /* LAWelcomeViewController.m in Sources */,
+				9112134E1C0767A700437690 /* SearchViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		911213221C07659F00437690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9112132B1C07659F00437690 /* LazadaViperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9112132D1C07659F00437690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				911213361C07659F00437690 /* LazadaViperUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		911213281C07659F00437690 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 911213091C07659F00437690 /* LazadaViper */;
+			targetProxy = 911213271C07659F00437690 /* PBXContainerItemProxy */;
+		};
+		911213331C07659F00437690 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 911213091C07659F00437690 /* LazadaViper */;
+			targetProxy = 911213321C07659F00437690 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		911213161C07659F00437690 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				911213171C07659F00437690 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9112131E1C07659F00437690 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9112131F1C07659F00437690 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		911213381C07659F00437690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		911213391C07659F00437690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9112133B1C07659F00437690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LazadaViper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.truongnn.LazadaViper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9112133C1C07659F00437690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LazadaViper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.truongnn.LazadaViper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9112133E1C07659F00437690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LazadaViperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.truongnn.LazadaViperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LazadaViper.app/LazadaViper";
+			};
+			name = Debug;
+		};
+		9112133F1C07659F00437690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LazadaViperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.truongnn.LazadaViperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LazadaViper.app/LazadaViper";
+			};
+			name = Release;
+		};
+		911213411C07659F00437690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LazadaViperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.truongnn.LazadaViperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LazadaViper;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		911213421C07659F00437690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LazadaViperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.truongnn.LazadaViperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LazadaViper;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		911213051C07659F00437690 /* Build configuration list for PBXProject "LazadaViper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				911213381C07659F00437690 /* Debug */,
+				911213391C07659F00437690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9112133A1C07659F00437690 /* Build configuration list for PBXNativeTarget "LazadaViper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9112133B1C07659F00437690 /* Debug */,
+				9112133C1C07659F00437690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9112133D1C07659F00437690 /* Build configuration list for PBXNativeTarget "LazadaViperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9112133E1C07659F00437690 /* Debug */,
+				9112133F1C07659F00437690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		911213401C07659F00437690 /* Build configuration list for PBXNativeTarget "LazadaViperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				911213411C07659F00437690 /* Debug */,
+				911213421C07659F00437690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		911213191C07659F00437690 /* LazadaViper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9112131A1C07659F00437690 /* LazadaViper.xcdatamodel */,
+			);
+			currentVersion = 9112131A1C07659F00437690 /* LazadaViper.xcdatamodel */;
+			path = LazadaViper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 911213021C07659F00437690 /* Project object */;
+}
