@@ -10,4 +10,12 @@
 
 @implementation LAVenture
 
+- (instancetype)initWithId:(NSUInteger)ventureID andName:(NSString *)ventureName {
+    if (self = [super init]) {
+        self.ventureID = ventureID;
+        self.ventureName = ventureName;
+    }
+    return self;
+}
+
 @end

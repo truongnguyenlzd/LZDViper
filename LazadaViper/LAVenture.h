@@ -10,7 +10,9 @@
 
 @interface LAVenture : NSObject
 
-@property NSString *ventureName;
-@property NSString *idVenture;
+- (instancetype)initWithId:(NSUInteger)ventureID andName:(NSString *)ventureName;
+
+@property (nonatomic, strong) NSString *ventureName;
+@property (nonatomic, assign) NSUInteger ventureID;
 
 @end

@@ -7,13 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "LAVentureProtocol.h"
-#import "LAVentureWireFrame.h"
-#import "LAVentureInteractor.h"
+#import "LAVentureViewOutputProtocol.h"
+#import "LAVentureInteractorOutputProtocol.h"
+#import "LAVentureWireFrameInputProtocol.h"
+#import "LAVentureInteractorInputProtocol.h"
+#import "LAVentureViewInputProtocol.h"
 
-@interface LAVenturePresenter : NSObject<LAVentureProtocol>
+@interface LAVenturePresenter : NSObject <LAVentureViewOutputProtocol, LAVentureInteractorOutputProtocol>
 
-@property LAVentureWireFrame *ventureWireFrame;
-@property LAVentureInteractor *ventureInteractor;
+@property (nonatomic, strong) id <LAVentureWireFrameInputProtocol> wireframe;
+@property (nonatomic, strong) id <LAVentureInteractorInputProtocol> interactor;
+@property (nonatomic, weak) id <LAVentureViewInputProtocol> view;
 
 @end

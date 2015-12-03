@@ -7,13 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LAVentureProtocol.h"
+#import "LAVentureViewOutputProtocol.h"
+#import "LAVentureViewInputProtocol.h"
 
-@interface LAVentureViewController : UIViewController
+@interface LAVentureViewController : UIViewController <LAVentureViewInputProtocol>
 
-@property (weak, nonatomic) IBOutlet UIPickerView *venturePicker;
-@property NSArray *ventureList;
-@property id<LAVentureProtocol> eventHandler;
+@property id <LAVentureViewOutputProtocol> eventHandler;
 
 @end
 

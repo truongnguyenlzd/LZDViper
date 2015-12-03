@@ -46,6 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		86B2584D1C102E710007CB52 /* LAVentureViewInputProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAVentureViewInputProtocol.h; sourceTree = "<group>"; };
+		86B2584E1C102FF10007CB52 /* LAVentureInteractorInputProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAVentureInteractorInputProtocol.h; sourceTree = "<group>"; };
+		86B2584F1C1034ED0007CB52 /* LAVentureInteractorOutputProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAVentureInteractorOutputProtocol.h; sourceTree = "<group>"; };
+		86B258501C1069740007CB52 /* LAVentureWireFrameInputProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAVentureWireFrameInputProtocol.h; sourceTree = "<group>"; };
 		9112130A1C07659F00437690 /* LazadaViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LazadaViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9112130E1C07659F00437690 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		911213101C07659F00437690 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -71,7 +75,7 @@
 		9112134D1C0767A700437690 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		911213571C076C0F00437690 /* LAVenturePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAVenturePresenter.h; sourceTree = "<group>"; };
 		911213581C076C0F00437690 /* LAVenturePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAVenturePresenter.m; sourceTree = "<group>"; };
-		9112135B1C076C4A00437690 /* LAVentureProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAVentureProtocol.h; sourceTree = "<group>"; };
+		9112135B1C076C4A00437690 /* LAVentureViewOutputProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LAVentureViewOutputProtocol.h; sourceTree = "<group>"; };
 		9112135C1C076D3300437690 /* LAVenture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAVenture.h; sourceTree = "<group>"; };
 		9112135D1C076D3300437690 /* LAVenture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAVenture.m; sourceTree = "<group>"; };
 		91829BDC1C0840FE003676EA /* LADependencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LADependencyManager.h; sourceTree = "<group>"; };
@@ -265,7 +269,11 @@
 		9112135A1C076C3300437690 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				9112135B1C076C4A00437690 /* LAVentureProtocol.h */,
+				9112135B1C076C4A00437690 /* LAVentureViewOutputProtocol.h */,
+				86B2584D1C102E710007CB52 /* LAVentureViewInputProtocol.h */,
+				86B2584E1C102FF10007CB52 /* LAVentureInteractorInputProtocol.h */,
+				86B2584F1C1034ED0007CB52 /* LAVentureInteractorOutputProtocol.h */,
+				86B258501C1069740007CB52 /* LAVentureWireFrameInputProtocol.h */,
 			);
 			name = Protocol;
 			sourceTree = "<group>";

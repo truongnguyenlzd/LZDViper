@@ -9,8 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "LAVenture.h"
 #import "LAVentureDataManager.h"
+#import "LAVentureInteractorInputProtocol.h"
+#import "LAVentureInteractorOutputProtocol.h"
 
-@interface LAVentureInteractor : NSObject
+@interface LAVentureInteractor : NSObject <LAVentureInteractorInputProtocol>
+
+@property (nonatomic, weak) id <LAVentureInteractorOutputProtocol> output;
 
 @property LAVentureDataManager *ventureDataManager;
 

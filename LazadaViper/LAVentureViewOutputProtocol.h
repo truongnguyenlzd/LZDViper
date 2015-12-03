@@ -8,8 +8,9 @@
 #import <Foundation/Foundation.h>
 #import "LAVenture.h"
 
-@protocol LAVentureProtocol <NSObject>
+@protocol LAVentureViewOutputProtocol <NSObject>
 
--(void)chooseVenture:(LAVenture*)venture;
+- (void)didSelectVenture:(LAVenture *)venture;
+- (void)setupView;
 
 @end

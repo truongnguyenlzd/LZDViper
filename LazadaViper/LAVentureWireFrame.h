@@ -9,12 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "LAVentureViewController.h"
 #import "LAWelcomeViewController.h"
+#import "LAVentureWireFrameInputProtocol.h"
 
-@interface LAVentureWireFrame : NSObject
-
-@property LAVentureViewController *ventureViewController;
-@property LAWelcomeViewController *welcomeViewController;
-
-- (void)showWelcomeScreen;
+@interface LAVentureWireFrame : NSObject <LAVentureWireFrameInputProtocol>
 
 @end
